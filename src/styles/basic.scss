@@ -7,6 +7,12 @@ $gray: #F6F4F6;
 $line-color: #D4D4D4;
 $danger: #DB2525;
 
+@mixin screen-max($max) { 
+    @media (max-width: $max) { 
+      @content 
+    } 
+  };
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,6 +27,7 @@ body {
 
 nav {
     width: 100vw;
+    min-width: 300px;
     height: 64px;
     background-image: linear-gradient(272deg, #AE276F, #5F1478);
     position: fixed;
@@ -48,6 +55,8 @@ button {
 .modal {
     position: fixed;
     width: 100%;
+    max-width: 100vw;
+    min-width: 300px;
     height: 100%;
     background: rgba(246, 244, 246, 0.3);
     z-index: 2;
@@ -57,6 +66,8 @@ button {
 .create-modal {
     height: 767px;
     width: 642px;
+    max-width: 100vw;
+    min-width: 300px;
     margin-left: auto;
     background: white;
     padding-left: 35px;
@@ -66,6 +77,7 @@ button {
     button {
         margin-top: 26px;
         width: 167px;
+        max-width: 40%;
         height: 48px;
         border: none;
         border-radius: 8px;
@@ -76,6 +88,8 @@ button {
 
     input {
         width: 573px;
+        max-width: 85vw;
+        min-width: 280px;
         height: 60px;
         border: 1px solid #B9B9B9;
         border-radius: 8px;
@@ -94,6 +108,8 @@ button {
         display: flex;
         justify-content: space-between;
         width: 572px;
+        max-width: 85vw;
+        min-width: 280px;
 
         .create-button {
             background-color: $secondary;
@@ -120,6 +136,8 @@ button {
 
     .decorative-line-h {
         width: 572px;
+        max-width: 85vw;
+        min-width: 280px;
         height: 1px;
         background-color: $line-color;
     }
@@ -142,6 +160,7 @@ button {
     display: flex;
     flex-direction: column;
     max-width: 90%;
+    min-width: 300px;
     width: 1046px;
     justify-content: center;
     margin-left: auto;
@@ -188,6 +207,7 @@ button {
     background-size: cover;
     background-position: center;
     height: 261px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -201,12 +221,15 @@ button {
 
         input {
             width: 1046px;
+            max-width: 100%;
+            min-width: 280px;
             height: 75px;
             border-radius: 8px;
             border: none;
             padding-left: 28px;
             font-weight: 300;
             font-size: 24px;
+            @include screen-max(400px){font-size: 16px;}
         }
     
         button {
@@ -231,12 +254,15 @@ button {
     flex-direction: column;
     align-items: center;
     width: 438px;
+    max-width:100vw;
+    min-width: 300px;
     height: 434px;
     margin: auto;
     background-color: white;
 
     button {
         width: 165px;
+        max-width: 40%;
         height: 48px;
         border-radius: 8px;
         border: none;
@@ -264,6 +290,7 @@ button {
         display: flex;
         justify-content: space-around;
         width: 364px;
+        max-width: 100%;
         margin-top: 22px;
 
         .cancel-button {
@@ -275,6 +302,7 @@ button {
 
     .decorative-line-h {
         width: 364px;
+        max-width: 80%;
         background: #E4E4E4;
         height: 1px;
     }
