@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  color: #263238;
+}
+
+body {
+  background: #F6F4F6;
+}
+
+nav {
+  width: 100vw;
+  height: 64px;
+  background-image: linear-gradient(272deg, #AE276F, #5F1478);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+nav img {
+  margin-left: 24px;
+}
+
+button {
+  box-shadow: 0px 3px 6px rgba(146, 32, 114, 0.2588235294);
+}
+button:hover {
+  cursor: pointer;
+}
+
+.closed-modal {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(246, 244, 246, 0.3);
+  z-index: 2;
+  display: flex;
+}
+
+.create-modal {
+  height: 767px;
+  width: 642px;
+  margin-left: auto;
+  background: white;
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.create-modal button {
+  margin-top: 26px;
+  width: 167px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+.create-modal input {
+  width: 573px;
+  height: 60px;
+  border: 1px solid #B9B9B9;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #757575;
+  padding-left: 25px;
+}
+.create-modal p {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.create-modal .create-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 572px;
+}
+.create-modal .create-buttons .create-button {
+  background-color: #E76316;
+  border: none;
+}
+.create-modal .create-buttons .cancel-button {
+  background-color: white;
+  border: 1px solid #DB2525;
+  color: #DB2525;
+}
+.create-modal .create-name {
+  margin-top: 43px;
+  margin-bottom: 50px;
+}
+.create-modal .create-image {
+  margin-bottom: 52px;
+}
+.create-modal .decorative-line-h {
+  width: 572px;
+  height: 1px;
+  background-color: #D4D4D4;
+}
+.create-modal .create-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-top: 41px;
+}
+.create-modal .create-header h2 {
+  font-size: 32px;
+  color: #5F1478;
+  margin-left: 18px;
+}
+
+.results-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  width: 1046px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.results-section .results-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  margin-top: 32px;
+  align-items: flex-end;
+}
+.results-section .results-header h1 {
+  color: #5F1478;
+  font-size: 32px;
+  font-weight: 400;
+}
+.results-section .results-header button {
+  background-color: #E76316;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 173px;
+  height: 48px;
+}
+.results-section .search-results {
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 187px;
+}
+
+.search-background {
+  background-image: url("../../public/img/fundo-busca.png");
+  background-size: cover;
+  background-position: center;
+  height: 261px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.search-background .search-bar-div {
+  max-width: 90%;
+  position: relative;
+  margin-bottom: 39px;
+  display: flex;
+  align-items: center;
+}
+.search-background .search-bar-div input {
+  width: 1046px;
+  height: 75px;
+  border-radius: 8px;
+  border: none;
+  padding-left: 28px;
+  font-weight: 300;
+  font-size: 24px;
+}
+.search-background .search-bar-div button {
+  position: absolute;
+  background: none;
+  border: none;
+  width: 49px;
+  height: 49px;
+  right: 25px;
+  box-shadow: none;
+}
+.search-background .search-bar-div button img {
+  width: 80%;
+}
+
+.delete-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 438px;
+  height: 434px;
+  margin: auto;
+  background-color: white;
+}
+.delete-card button {
+  width: 165px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: #DB2525;
+}
+.delete-card p {
+  margin-top: 13px;
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 12px;
+}
+.delete-card h2 {
+  font-size: 32px;
+  color: #DB2525;
+  font-weight: 700;
+}
+.delete-card .delete-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 364px;
+  margin-top: 22px;
+}
+.delete-card .delete-buttons .cancel-button {
+  border: 1px solid #DB2525;
+  color: #DB2525;
+  background-color: white;
+}
+.delete-card .decorative-line-h {
+  width: 364px;
+  background: #E4E4E4;
+  height: 1px;
+}
+.delete-card .delete-image-div {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 159px;
+  height: 159px;
+  border: 6px solid #E4E4E4;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(219, 37, 37, 0.0588235294);
+}
+.delete-card .delete-image-div img {
+  width: 68px;
+  height: 68px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 234px;
+  height: 267px;
+  border: #E4E4E4 1px solid;
+  box-shadow: 0 3px 6px #E5E5E5;
+  flex-wrap: wrap;
+}
+.card p {
+  max-width: 70%;
+  text-align: center;
+}
+.card .decorative-line-h {
+  height: 1px;
+  width: 169px;
+  background-color: #F0EFF0;
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+.card .card-image-div {
+  height: 95px;
+  width: 95px;
+  border: solid 1px #E4E4E4;
+  border-radius: 100%;
+  margin-top: 28px;
+}
+.card .card-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.0588235294);
+  height: 43px;
+  margin-top: auto;
+}
+.card .card-buttons button {
+  box-shadow: none;
+}
+.card .card-buttons .decorative-line-v {
+  width: 1px;
+  height: 22px;
+  background-color: #F6F4F6;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+.card .card-buttons .card-button {
+  background: none;
+  border: none;
+  color: #979DA0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.card .card-buttons .edit img {
+  margin-right: 10px;
+}
+.card .card-buttons .delete img {
+  margin-right: 12px;
+}/*# sourceMappingURL=basic.css.map */
