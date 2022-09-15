@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/simple-layout-test/static/css/main.740f4775.css",
+    "main.js": "/simple-layout-test/static/js/main.ab2be537.js",
+    "static/media/fundo-busca.png": "/simple-layout-test/static/media/fundo-busca.12ff68cfdfeaa530f641.png",
+    "index.html": "/simple-layout-test/index.html",
+    "main.740f4775.css.map": "/simple-layout-test/static/css/main.740f4775.css.map",
+    "main.ab2be537.js.map": "/simple-layout-test/static/js/main.ab2be537.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.740f4775.css",
+    "static/js/main.ab2be537.js"
+  ]
+}
